@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(197, 148, 83);
+}
+
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: rgb(12, 139, 197);
+    box-shadow: 0 5px 10px rgb(129, 224, 231);
+}
+
+.display {
+   height: 80px;
+   width: 100%;
+   outline: none;
+   border: none;
+   text-align: right;
+   margin-bottom: 10px;
+   font-size: 25px;
+   color: rgb(219, 49, 114);
+   pointer-events: none;
+}
+
+.btn-calculadora{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn-calculadora button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(206, 144, 51);   
+}
+
+.btn-calculadora button :active{
+   transform: scale(0.99);
+}
+
+.operator {
+    color: rgb(226, 220, 216);
+}
+
